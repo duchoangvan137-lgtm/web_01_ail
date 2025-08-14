@@ -1,0 +1,90 @@
+:root {
+  --bg: #0b0d10;
+  --card: #11151a;
+  --muted: #c3c8d4;
+  --text: #e9edf5;
+  --brand: #4f8cff;
+  --accent: #22c55e;
+  --border: #1f2733;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px system-ui, -apple-system, segoe UI, Roboto, Ubuntu,
+    "Helvetica Neue", Arial;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+.container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(11, 13, 16, 0.8);
+  backdrop-filter: saturate(120%) blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.header_inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+.logo {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  font-size: 1.3rem;
+}
+.nav {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+.nav a {
+  opacity: 0.9;
+}
+.nav a:hover {
+  opacity: 1;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.search {
+  background: #0b0d10;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.55rem 0.8rem;
+  color: var(--text);
+  min-width: 180px;
+}
+.cart {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.burger {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.45rem 0.7rem;
+  color: var(--text);
+}
