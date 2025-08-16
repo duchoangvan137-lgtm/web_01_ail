@@ -180,3 +180,16 @@ a {
   flex-direction: column;
   gap: 0.5rem;
 }
+.product__thumb {
+  height: 140px;
+  background: linear-gradient(135deg, #1a2230, #11161d);
+  border-radius: 12px;
+  border: 1px dashed #263145;
+}
+.product__title {
+  margin: 0.3rem 0;
+}
+.product__price {
+  color: var(--accent);
+  font-weight: 700;
+}
