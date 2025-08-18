@@ -1,3 +1,4 @@
+/* css toan bai */
 :root {
   --bg: #0b0d10;
   --card: #11151a;
@@ -27,11 +28,13 @@ a {
   color: var(--text);
   text-decoration: none;
 }
+/* css toan bai */
+
+/* css pham indext */
 .container {
   width: min(1100px, 92%);
   margin-inline: auto;
 }
-/* css pham header */
 .header {
   position: sticky;
   top: 0;
@@ -88,7 +91,6 @@ a {
   padding: 0.45rem 0.7rem;
   color: var(--text);
 }
-/* **** */
 .page {
   padding: 2rem 0;
 }
@@ -141,10 +143,11 @@ a {
 .grid--4 {
   grid-template-columns: repeat(4, 1fr);
 }
-/* .grid--3 {
-} */
 @media (max-width: 900px) {
   .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3 {
     grid-template-columns: repeat(2, 1fr);
   }
   .search {
@@ -153,6 +156,9 @@ a {
 }
 @media (max-width: 560px) {
   .grid--4,
+  .grid--3 {
+    grid-template-columns: 1fr;
+  }
   .nav {
     display: none;
   }
@@ -208,3 +214,82 @@ a {
   display: flex;
   gap: 0.8rem;
 }
+/* css pham indext */
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.filters {
+  display: flex;
+  gap: 0, 6rem;
+  align-items: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+.chips {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.chip {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0, 3rem 0, 8rem;
+  color: var(--muted);
+}
+.pagination {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+.page {
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.8rem;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+.page.active {
+  background: var(--brand);
+  color: #e9edf5;
+  opacity: 1;
+  border-color: transparent;
+}
+/* css phan product */
+
+/* css phan product-detail */
+.product__thumb--lg {
+  height: 320px;
+}
+.product__price--lg {
+  font-size: 1.4rem;
+}
+.product-detail {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+}
+.product-detail .thumbs {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.product-detail .thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  background: #121820;
+  border: 1px dashed #263145;
+}
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 0, 6rem;
+  margin: 1rem 0;
+}
+.actions-inline {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+/* css phan product-detail */

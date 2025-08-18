@@ -4,6 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container header_inner">
+        <a class="logo" href="indext.html">ShopX</a>
+        <nav class="nav" id="nav">
+          <a href="./indext.html">trang chu</a>
+          <a href="./products.html">san pham</a>
+          <a href="./about.html">gioi thieu</a>
+          <a href="./contact.html">lien he</a>
+        </nav>
+        <div class="actions">
+          <input type="text" class="search" placeholder="tim kiem ..." />
+          <a class="btn btn--ghost" href="./login.html">dang nhap</a>
+          <a class="cart" href="./checkout.html"
+            >🛒 <span id="cart-count">0</span></a
+          >
+          <button class="burger" id="burger" aria-label="Menu">☰</button>
+        </div>
+      </div>
+    </header>
+    <main class="container page">
+      <h1>tat ca san pham</h1>
+      <div class="filters">
+        <select>
+          <option>sap sep : pho bien</option>
+          <option>gia thap -> cao</option>
+          <option>gia cao -> thap</option>
+          <option>moi nhat</option>
+        </select>
+        <div class="chips">
+          <button class="chip">dien thoai</button>
+          <button class="chip">laptop</button>
+          <button class="chip">phu kien</button>
+        </div>
+      </div>
+      <div class="grid grid--3">
+        <div class="product">
+          <div class="product__thumb"></div>
+          <h3 class="product__title">san pham 1</h3>
+          <p class="product__price">1.990.000 d</p>
+          <a class="btn btn--block" href="product-detail.html">xem chi tiet</a>
+        </div>
+
+        <div class="product">
+          <div class="product__thumb"></div>
+          <h3 class="product__title">san pham 2</h3>
+          <p class="product__price">1.990.000 d</p>
+          <a class="btn btn--block" href="product-detail.html">xem chi tiet</a>
+        </div>
+
+        <div class="product">
+          <div class="product__thumb"></div>
+          <h3 class="product__title">san pham 3</h3>
+          <p class="product__price">1.990.000 d</p>
+          <a class="btn btn--block" href="product-detail.html">xem chi tiet</a>
+        </div>
+
+        <div class="product">
+          <div class="product__thumb"></div>
+          <h3 class="product__title">san pham 4</h3>
+          <p class="product__price">1.990.000 d</p>
+          <a class="btn btn--block" href="product-detail.html">xem chi tiet</a>
+        </div>
+
+        <div class="product">
+          <div class="product__thumb"></div>
+          <h3 class="product__title">san pham 5</h3>
+          <p class="product__price">1.990.000 d</p>
+          <a class="btn btn--block" href="product-detail.html">xem chi tiet</a>
+        </div>
+
+        <div class="product">
+          <div class="product__thumb"></div>
+          <h3 class="product__title">san pham 6</h3>
+          <p class="product__price">1.990.000 d</p>
+          <a class="btn btn--block" href="product-detail.html">xem chi tiet</a>
+        </div>
+
+        <div class="product">
+          <div class="product__thumb"></div>
+          <h3 class="product__title">san pham 7</h3>
+          <p class="product__price">1.990.000 d</p>
+          <a class="btn btn--block" href="product-detail.html">xem chi tiet</a>
+        </div>
+
+        <div class="product">
+          <div class="product__thumb"></div>
+          <h3 class="product__title">san pham 8</h3>
+          <p class="product__price">1.990.000 d</p>
+          <a class="btn btn--block" href="product-detail.html">xem chi tiet</a>
+        </div>
+
+        <div class="product">
+          <div class="product__thumb"></div>
+          <h3 class="product__title">san pham 9</h3>
+          <p class="product__price">1.990.000 d</p>
+          <a class="btn btn--block" href="product-detail.html">xem chi tiet</a>
+        </div>
+      </div>
+      <div class="pagination">
+        <a href="#" class="page active">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© Trang chur . ShopX . All rights reserved</p>
+        <div class="footer__links">
+          <a href="privacy.html">chinh sach</a>
+          <a href="terms.html">dieu khoan</a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
