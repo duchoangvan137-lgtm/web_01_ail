@@ -293,3 +293,14 @@ a {
   flex-wrap: wrap;
 }
 /* css phan product-detail */
+
+/* css chung cho phan form */
+.form {
+  display: flex;
+  gap: 0.8rem;
+}
+.form input,
+.form textarea,
+.form select {
+}
+/* css chung cho phan form */
