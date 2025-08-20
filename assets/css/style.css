@@ -119,6 +119,10 @@ a {
   cursor: pointer;
   transition: transform 0.05s ease;
 }
+.btn--ghost {
+  background: transparent;
+  border: solid var(--border);
+}
 .btn:active {
   transform: translateY(1px);
 }
@@ -310,3 +314,49 @@ a {
   color: var(--text);
 }
 /* css chung cho phan form */
+
+/* css phan login */
+.from--auth {
+  max-width: 420px;
+}
+/* css phan login */
+
+/* css phan cart  */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.table th,
+.table td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.8rem;
+  text-align: left;
+}
+table thead {
+  background: #0f1318;
+}
+.cart__summary {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1rem;
+}
+.cart__summary .totals {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+}
+.cart__summary .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.4rem 0;
+}
+.row--strong {
+  font-weight: 800;
+}
+/* css phan cart  */
