@@ -1,9 +1,9 @@
 /* css toan bai */
 :root {
-  --bg: #0b0d10;
+  --bg: rgb(242, 214, 228);
   --card: #11151a;
   --muted: #c3c8d4;
-  --text: #e9edf5;
+  --text: black;
   --brand: #4f8cff;
   --accent: #22c55e;
   --border: #1f2733;
@@ -39,7 +39,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(11, 13, 16, 0.8);
+  background: bisque;
   backdrop-filter: saturate(120%) blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -71,7 +71,7 @@ a {
   gap: 0.6rem;
 }
 .search {
-  background: #0b0d10;
+  background: white;
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 0.55rem 0.8rem;
@@ -111,7 +111,7 @@ a {
 .btn {
   display: inline-block;
   background: var(--brand);
-  color: white;
+  color: black;
   border: none;
   border-radius: 12px;
   padding: 0.65rem 1rem;
@@ -120,8 +120,8 @@ a {
   transition: transform 0.05s ease;
 }
 .btn--ghost {
-  background: transparent;
-  border: solid var(--border);
+  background: white;
+  border: solid beige;
 }
 .btn:active {
   transform: translateY(1px);
@@ -171,7 +171,7 @@ a {
   }
 }
 .cart {
-  background: var(--card);
+  background: white;
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1rem;
@@ -182,7 +182,7 @@ a {
   opacity: 1;
 }
 .product {
-  background: var(--card);
+  background: white;
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1rem;
@@ -212,7 +212,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem 0;
-  color: var(--muted);
+  color: black;
 }
 .footer__links {
   display: flex;
@@ -239,7 +239,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 0, 3rem 0, 8rem;
-  color: var(--muted);
+  color: black;
 }
 .pagination {
   display: flex;
@@ -307,7 +307,7 @@ a {
 .form textarea,
 .form select {
   width: 100%;
-  background: #0f1318;
+  background: white;
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 0.6rem;
@@ -325,7 +325,7 @@ a {
 .table {
   width: 100%;
   border-collapse: collapse;
-  background: var(--card);
+  background: rgb(242, 214, 228);
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -337,7 +337,7 @@ a {
   text-align: left;
 }
 table thead {
-  background: #0f1318;
+  background: rgb(242, 214, 228);
 }
 .cart__summary {
   margin-top: 1rem;
@@ -346,7 +346,7 @@ table thead {
   gap: 1rem;
 }
 .cart__summary .totals {
-  background: var(--card);
+  background: rgb(242, 214, 228);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1rem;
@@ -360,3 +360,8 @@ table thead {
   font-weight: 800;
 }
 /* css phan cart  */
+/* css phan checkout */
+.form--grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+/* css phan checkout */
